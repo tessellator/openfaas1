@@ -1,0 +1,9 @@
+provider:
+  name: faas
+  gateway: http://127.0.0.1:8080
+
+functions:
+  hello-java:
+    lang: java8
+    handler: ./hello-java
+    image: hello-java
