@@ -17,7 +17,7 @@ public class Handler implements com.openfaas.model.IHandler {
     public IResponse Handle(IRequest req) {
 
         String r;
-        URL u = getClass().getResource("res_file.xml");
+        URL u = getClass().getResource("/res_file.xml");
         if ( u == null) {
             r = "getResource = NULL\n";
         }
